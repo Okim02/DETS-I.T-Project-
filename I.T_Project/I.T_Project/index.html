@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Event Tabulation System</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Custom Styles */
+        .navbar-custom {
+            background-color: #BF3131;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-custom .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .navbar-custom .nav-link {
+            color: #333;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: #EEEEEE;
+        }
+
+        .signup-btn, .login-btn {
+            width: 150px;
+            color: black;
+            border-radius: 4px;
+            margin: auto;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .signup-btn {
+            background-color: #EAD196;
+        }
+
+        .signup-btn:hover {
+            background-color: #BF3131;
+            color: white;
+        }
+
+        .login-btn {
+            background-color: #28A745; /* Green color */
+            float: right;
+        }
+
+        .login-btn:hover {
+            background-color: #218838;
+            color: white;
+        }
+
+        .hero {
+            background: url('cu3.png') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+            flex-grow: 1;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: 20px;
+        }
+
+        .navbar-nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        .navbar-nav li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav li a:hover {
+            color: #EAD196;
+        }
+
+        .content img {
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #BF3131;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom position-relative">
+        <div class="container">
+            <a class="navbar-brand" href="#">DETS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
+                </ul>
+            </div>
+            <a href="login.php" class="btn login-btn">Login</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center">
+        <div class="container hero-content">
+            <h1 class="display-4">Ready to transform your event management experience?</h1>
+            <br>
+            <h2 class="mb-4">Welcome to the Dynamic Event Tabulation System.</h2>
+            <p class="lead mb-4">
+                The Dynamic Event Tabulation System (DETS) is a user-friendly solution that simplifies event tabulation for sports, talent shows, and academic events...
+            </p>
+            <a href="signup.html" class="btn signup-btn">Sign Up</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dynamic Event Tabulation System. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
